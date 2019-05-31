@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>OsteoCodeR.com</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="assets/css/Dark-NavBar.css">
+    <link rel="stylesheet" href="assets/css/fluid-container-fix.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/css/Logo.css">
+</head>
+
+<body style="background-image: url(&quot;assets/img/bg.png&quot;);">
+    <div class="container-fluid" style="padding: 0px;">
+        <div class="col-md-12 col-xl-10 offset-xl-1" style="padding: 0px;">
+            <nav class="navbar navbar-light navbar-expand-md border rounded shadow-none navigation-clean" style="background-color: #273039;color: rgb(255,255,255);">
+                <div class="container"><a class="navbar-brand" href="#"><img style="background-image: url(&quot;assets/img/logo.png&quot;);width: 381px;height: 45px;" src="assets/img/logo.png">&nbsp;</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div
+                        class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav ml-auto" style="color: #2a7bb6;">
+                            <li class="nav-item" role="presentation"><a class="nav-link active" style="color: #eeeeee;font-family: 'Open Sans', sans-serif;" href="index.html"><i class="far fa-question-circle"></i><strong>&nbsp;About</strong></a></li>
+                            <li class="dropdown nav-item" style="color: rgb(42,123,182);"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" style="color: #2a7bb6;font-family: 'Open Sans', sans-serif;background-color: rgba(255,255,255,0);" href="#"><i class="fas fa-project-diagram"></i><strong>&nbsp;Projects</strong></a>
+                                <div
+                                    class="dropdown-menu border-secondary" role="menu" style="background-color: #eeeeee;color: #2a7bb6;"><a class="dropdown-item" role="presentation" style="font-size: 14px;color: #273039;" href="osteosort.html"><strong>OsteoSort</strong></a>
+                                    <div class="dropdown-divider text-warning border-secondary" role="presentation"></div><a class="dropdown-item" role="presentation" style="font-size: 14px;color: #2a7bb6;" href="measurements.html"><strong>Measurement Standards</strong><br></a>
+                                    <div class="dropdown-divider border-secondary" role="presentation"></div><a class="dropdown-item" role="presentation" style="font-size: 14px;color: #273039;" href="anthrostats.html"><strong>AnthroStats</strong></a>
+                                    <div class="dropdown-divider border-secondary" role="presentation"></div><a class="dropdown-item" role="presentation" href="tools.html" style="color: #273039;font-size: 14px;"><strong>FA Analytical Tools</strong></a></div>
+                </li>
+                <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" style="color: #eeeeee;font-family: 'Open Sans', sans-serif;" href="#"><i class="fas fa-chart-bar"></i>&nbsp;<strong>Tools</strong></a>
+                    <div class="dropdown-menu border-secondary"
+                        role="menu" style="background-color: #eeeeee;"><a class="dropdown-item text-break" role="presentation" style="color: #273039;font-size: 14px;" href="#"><strong>OsteoSort</strong></a>
+                        <div class="dropdown-divider border-secondary" role="presentation"></div><a class="dropdown-item" role="presentation" href="#" style="color: #273039;font-size: 14px;"><strong>MSPS</strong></a></div>
+                </li>
+                <li class="nav-item" role="presentation"><a class="nav-link" style="color: #eeeeee;background-color: rgba(255,0,0,0);font-family: 'Open Sans', sans-serif;" href="https://github.com/jjlynch2" target="_blank"><i class="fab fa-github"></i><strong>&nbsp;GitHub</strong></a></li>
+                </ul>
+        </div>
+    </div>
+    </nav>
+    </div>
+    <div class="col-auto col-md-12 col-xl-10 offset-xl-1 rounded" style="background-color: #eeeeee;"><div><br></div>
+        <h4>Measurement Standards</h4>
+        <p>This project standardizes measurement numbers across multiple measurement procedures.&nbsp; Due to changing standard numbers, this measurement guide was created to avoid downstream issues with CoRA and OsteoSort.&nbsp; These numbers will never
+            change unless significant errors are identified.&nbsp; If a measurement becomes deprecated, the number will be indefinitely reserved.&nbsp; These standards provide a stable numbering platform on which advanced analytics can be built.</p>
+        <p>Current version: 0.0.1<br>Download: &nbsp;<a href="Standard_Measurements.csv" target="_blank">CSV</a> &nbsp; &nbsp;<a href="Standard_Measurements.pdf" target="_blank">PDF</a> &nbsp; &nbsp;<a href="Standard_Measurements.docx" target="_blank">DOCX</a>            &nbsp; &nbsp;&nbsp;<br></p><div><br><br></div><table id="example" class="table compact table-striped table-hover">
+<thead>
+<tr class="row-1 odd">
+	<th class="column-1">OsteoCodeR 2019</th><th class="column-2">Buikstra &amp; Ubelaker 1994</th><th class="column-3">UTK 1994</th><th class="column-4">UTK 2016</th><th class="column-5">Byrd &amp; Adams 2003</th><th class="column-6">Simmons 1990</th><th class="column-7">Holland 1992</th><th class="column-8">Holland 1995</th><th class="column-9">Howells 1973</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1">Cra_01</td><td class="column-2">1</td><td class="column-3">1</td><td class="column-4">1</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">GOL</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1">Cra_02</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">2</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">NOL</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1">Cra_03</td><td class="column-2">2</td><td class="column-3">2</td><td class="column-4">3</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">XCB</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1">Cra_04</td><td class="column-2">3</td><td class="column-3">3</td><td class="column-4">4</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">ZYB</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1">Cra_05</td><td class="column-2">4</td><td class="column-3">4</td><td class="column-4">5</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">BBH</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1">Cra_06</td><td class="column-2">5</td><td class="column-3">5</td><td class="column-4">6</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">BNL</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1">Cra_07</td><td class="column-2">6</td><td class="column-3">6</td><td class="column-4">7</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">BPL</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1">Cra_08</td><td class="column-2">7</td><td class="column-3">7</td><td class="column-4">8</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">MAB</td>
+</tr>
+<tr class="row-10 even">
+	<td class="column-1">Cra_09</td><td class="column-2">8</td><td class="column-3">8</td><td class="column-4">9</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-11 odd">
+	<td class="column-1">Cra_10</td><td class="column-2">9</td><td class="column-3">9</td><td class="column-4">10</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">AUB</td>
+</tr>
+<tr class="row-12 even">
+	<td class="column-1">Cra_11</td><td class="column-2">10</td><td class="column-3">10</td><td class="column-4">11</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">NPH</td>
+</tr>
+<tr class="row-13 odd">
+	<td class="column-1">Cra_12</td><td class="column-2">11</td><td class="column-3">11</td><td class="column-4">12</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-14 even">
+	<td class="column-1">Cra_13</td><td class="column-2">12</td><td class="column-3">12</td><td class="column-4">13</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-15 odd">
+	<td class="column-1">Cra_14</td><td class="column-2">13</td><td class="column-3">13</td><td class="column-4">14</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">NLH</td>
+</tr>
+<tr class="row-16 even">
+	<td class="column-1">Cra_15</td><td class="column-2">14</td><td class="column-3">14</td><td class="column-4">15</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">NLB</td>
+</tr>
+<tr class="row-17 odd">
+	<td class="column-1">Cra_16</td><td class="column-2">15</td><td class="column-3">15</td><td class="column-4">16</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">OBB</td>
+</tr>
+<tr class="row-18 even">
+	<td class="column-1">Cra_17</td><td class="column-2">16</td><td class="column-3">16</td><td class="column-4">17</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">OBH</td>
+</tr>
+<tr class="row-19 odd">
+	<td class="column-1">Cra_18</td><td class="column-2">17</td><td class="column-3">17</td><td class="column-4">18</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">EKB</td>
+</tr>
+<tr class="row-20 even">
+	<td class="column-1">Cra_19</td><td class="column-2">18</td><td class="column-3">18</td><td class="column-4">19</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">DKB</td>
+</tr>
+<tr class="row-21 odd">
+	<td class="column-1">Cra_20</td><td class="column-2">19</td><td class="column-3">19</td><td class="column-4">20</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">FRC</td>
+</tr>
+<tr class="row-22 even">
+	<td class="column-1">Cra_21</td><td class="column-2">20</td><td class="column-3">20</td><td class="column-4">21</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">PAC</td>
+</tr>
+<tr class="row-23 odd">
+	<td class="column-1">Cra_22</td><td class="column-2">21</td><td class="column-3">21</td><td class="column-4">22</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">OCC</td>
+</tr>
+<tr class="row-24 even">
+	<td class="column-1">Cra_23</td><td class="column-2">22</td><td class="column-3">22</td><td class="column-4">23</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-25 odd">
+	<td class="column-1">Cra_24</td><td class="column-2">23</td><td class="column-3">23</td><td class="column-4">24</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-26 even">
+	<td class="column-1">Cra_25</td><td class="column-2">24</td><td class="column-3">24</td><td class="column-4">25</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">MDH</td>
+</tr>
+<tr class="row-27 odd">
+	<td class="column-1">Cra_26</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">26</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">ASB</td>
+</tr>
+<tr class="row-28 even">
+	<td class="column-1">Cra_27</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">27</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">ZMB</td>
+</tr>
+<tr class="row-29 odd">
+	<td class="column-1">Cra_28</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">28</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-30 even">
+	<td class="column-1">Cra_29</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">XFB</td>
+</tr>
+<tr class="row-31 odd">
+	<td class="column-1">Cra_30</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">STB</td>
+</tr>
+<tr class="row-32 even">
+	<td class="column-1">Cra_31</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">WCB</td>
+</tr>
+<tr class="row-33 odd">
+	<td class="column-1">Cra_32</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">JUB</td>
+</tr>
+<tr class="row-34 even">
+	<td class="column-1">Cra_33</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">MDB</td>
+</tr>
+<tr class="row-35 odd">
+	<td class="column-1">Cra_34</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">SSS</td>
+</tr>
+<tr class="row-36 even">
+	<td class="column-1">Cra_35</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">FMB</td>
+</tr>
+<tr class="row-37 odd">
+	<td class="column-1">Cra_36</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">NAS</td>
+</tr>
+<tr class="row-38 even">
+	<td class="column-1">Cra_37</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">DKS</td>
+</tr>
+<tr class="row-39 odd">
+	<td class="column-1">Cra_38</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">NDS</td>
+</tr>
+<tr class="row-40 even">
+	<td class="column-1">Cra_39</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">WNB</td>
+</tr>
+<tr class="row-41 odd">
+	<td class="column-1">Cra_40</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">SIS</td>
+</tr>
+<tr class="row-42 even">
+	<td class="column-1">Cra_41</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">IML</td>
+</tr>
+<tr class="row-43 odd">
+	<td class="column-1">Cra_42</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">XML</td>
+</tr>
+<tr class="row-44 even">
+	<td class="column-1">Cra_43</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">MLS</td>
+</tr>
+<tr class="row-45 odd">
+	<td class="column-1">Cra_44</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">WMH</td>
+</tr>
+<tr class="row-46 even">
+	<td class="column-1">Cra_45</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">SOS</td>
+</tr>
+<tr class="row-47 odd">
+	<td class="column-1">Cra_46</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">FOL</td>
+</tr>
+<tr class="row-48 even">
+	<td class="column-1">Cra_47</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">FRS</td>
+</tr>
+<tr class="row-49 odd">
+	<td class="column-1">Cra_48</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">OCA</td>
+</tr>
+<tr class="row-50 even">
+	<td class="column-1">Cra_49</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">PAS</td>
+</tr>
+<tr class="row-51 odd">
+	<td class="column-1">Cra_50</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">PAF</td>
+</tr>
+<tr class="row-52 even">
+	<td class="column-1">Cra_51</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">OCS</td>
+</tr>
+<tr class="row-53 odd">
+	<td class="column-1">Cra_52</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">OCF</td>
+</tr>
+<tr class="row-54 even">
+	<td class="column-1">Cra_53</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">VRR</td>
+</tr>
+<tr class="row-55 odd">
+	<td class="column-1">Cra_54</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">NAR</td>
+</tr>
+<tr class="row-56 even">
+	<td class="column-1">Cra_55</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">SSR</td>
+</tr>
+<tr class="row-57 odd">
+	<td class="column-1">Cra_56</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">PRR</td>
+</tr>
+<tr class="row-58 even">
+	<td class="column-1">Cra_57</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">DKR</td>
+</tr>
+<tr class="row-59 odd">
+	<td class="column-1">Cra_58</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">ZOR</td>
+</tr>
+<tr class="row-60 even">
+	<td class="column-1">Cra_59</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">FMR</td>
+</tr>
+<tr class="row-61 odd">
+	<td class="column-1">Cra_60</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">EKR</td>
+</tr>
+<tr class="row-62 even">
+	<td class="column-1">Cra_61</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">ZMR</td>
+</tr>
+<tr class="row-63 odd">
+	<td class="column-1">Cra_62</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">AVR</td>
+</tr>
+<tr class="row-64 even">
+	<td class="column-1">Cra_63</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">NAA</td>
+</tr>
+<tr class="row-65 odd">
+	<td class="column-1">Cra_64</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">PRA</td>
+</tr>
+<tr class="row-66 even">
+	<td class="column-1">Cra_65</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">BAA</td>
+</tr>
+<tr class="row-67 odd">
+	<td class="column-1">Cra_66</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">NBA</td>
+</tr>
+<tr class="row-68 even">
+	<td class="column-1">Cra_67</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">BBA</td>
+</tr>
+<tr class="row-69 odd">
+	<td class="column-1">Cra_68</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">SSA</td>
+</tr>
+<tr class="row-70 even">
+	<td class="column-1">Cra_69</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">NFA</td>
+</tr>
+<tr class="row-71 odd">
+	<td class="column-1">Cra_70</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">DKA</td>
+</tr>
+<tr class="row-72 even">
+	<td class="column-1">Cra_71</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">NDA</td>
+</tr>
+<tr class="row-73 odd">
+	<td class="column-1">Cra_72</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">SIA</td>
+</tr>
+<tr class="row-74 even">
+	<td class="column-1">Cra_73</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">FRA</td>
+</tr>
+<tr class="row-75 odd">
+	<td class="column-1">Cra_74</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9">PAA</td>
+</tr>
+<tr class="row-76 even">
+	<td class="column-1">Man_01</td><td class="column-2">25</td><td class="column-3">25</td><td class="column-4">29</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-77 odd">
+	<td class="column-1">Man_02</td><td class="column-2">26</td><td class="column-3">26</td><td class="column-4">30</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-78 even">
+	<td class="column-1">Man_03</td><td class="column-2">27</td><td class="column-3">27</td><td class="column-4">31</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-79 odd">
+	<td class="column-1">Man_04</td><td class="column-2">28</td><td class="column-3">28</td><td class="column-4">32</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-80 even">
+	<td class="column-1">Man_05</td><td class="column-2">29</td><td class="column-3">29</td><td class="column-4">33</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-81 odd">
+	<td class="column-1">Man_06</td><td class="column-2">30</td><td class="column-3">30</td><td class="column-4">34</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-82 even">
+	<td class="column-1">Man_07</td><td class="column-2">31</td><td class="column-3">31</td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-83 odd">
+	<td class="column-1">Man_08</td><td class="column-2">32</td><td class="column-3">32</td><td class="column-4">35</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-84 even">
+	<td class="column-1">Man_09</td><td class="column-2">33</td><td class="column-3">33</td><td class="column-4">36</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-85 odd">
+	<td class="column-1">Man_10</td><td class="column-2">34</td><td class="column-3">34</td><td class="column-4">37</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-86 even">
+	<td class="column-1">Cla_01</td><td class="column-2">35</td><td class="column-3">35</td><td class="column-4">38</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-87 odd">
+	<td class="column-1">Cla_02</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">39</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-88 even">
+	<td class="column-1">Cla_03</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">40</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-89 odd">
+	<td class="column-1">Cla_04</td><td class="column-2">36</td><td class="column-3">36</td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-90 even">
+	<td class="column-1">Cla_05</td><td class="column-2">37</td><td class="column-3">37</td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-91 odd">
+	<td class="column-1">Cla_06</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">37A</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-92 even">
+	<td class="column-1">Cla_07</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">37B</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-93 odd">
+	<td class="column-1">Cla_08</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">37C</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-94 even">
+	<td class="column-1">Cla_09</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">37D</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-95 odd">
+	<td class="column-1">Sca_01</td><td class="column-2">38</td><td class="column-3">38</td><td class="column-4">41</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-96 even">
+	<td class="column-1">Sca_02</td><td class="column-2">39</td><td class="column-3">39</td><td class="column-4">42</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-97 odd">
+	<td class="column-1">Sca_03</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">43</td><td class="column-5">39B</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-98 even">
+	<td class="column-1">Sca_04</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">44</td><td class="column-5">39A</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-99 odd">
+	<td class="column-1">Sca_05</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">39D</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-100 even">
+	<td class="column-1">Hum_01</td><td class="column-2">40</td><td class="column-3">40</td><td class="column-4">45</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-101 odd">
+	<td class="column-1">Hum_02</td><td class="column-2">41</td><td class="column-3">41</td><td class="column-4">46</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-102 even">
+	<td class="column-1">Hum_03</td><td class="column-2">42</td><td class="column-3">42</td><td class="column-4">47</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-103 odd">
+	<td class="column-1">Hum_04</td><td class="column-2">43</td><td class="column-3">43</td><td class="column-4">48</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-104 even">
+	<td class="column-1">Hum_05</td><td class="column-2">44</td><td class="column-3">44</td><td class="column-4">49</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-105 odd">
+	<td class="column-1">Hum_06</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">41A</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-106 even">
+	<td class="column-1">Hum_07</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">42A</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-107 odd">
+	<td class="column-1">Hum_08</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">44B</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-108 even">
+	<td class="column-1">Hum_09</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">44D</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-109 odd">
+	<td class="column-1">Rad_01</td><td class="column-2">45</td><td class="column-3">45</td><td class="column-4">50</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-110 even">
+	<td class="column-1">Rad_02</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">51</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-111 odd">
+	<td class="column-1">Rad_03</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">52</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-112 even">
+	<td class="column-1">Rad_04</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">53</td><td class="column-5">47D</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-113 odd">
+	<td class="column-1">Rad_05</td><td class="column-2">46</td><td class="column-3">46</td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-114 even">
+	<td class="column-1">Rad_06</td><td class="column-2">47</td><td class="column-3">47</td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-115 odd">
+	<td class="column-1">Rad_07</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">47A</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-116 even">
+	<td class="column-1">Rad_08</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">47B</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-117 odd">
+	<td class="column-1">Rad_09</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">47C</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-118 even">
+	<td class="column-1">Rad_10</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">47E</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-119 odd">
+	<td class="column-1">Uln_01</td><td class="column-2">48</td><td class="column-3">48</td><td class="column-4">54</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-120 even">
+	<td class="column-1">Uln_02</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">55</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-121 odd">
+	<td class="column-1">Uln_03</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">56</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-122 even">
+	<td class="column-1">Uln_04</td><td class="column-2">49</td><td class="column-3">49</td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-123 odd">
+	<td class="column-1">Uln_05</td><td class="column-2">50</td><td class="column-3">50</td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-124 even">
+	<td class="column-1">Uln_06</td><td class="column-2">51</td><td class="column-3">51</td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-125 odd">
+	<td class="column-1">Uln_07</td><td class="column-2">52</td><td class="column-3">52</td><td class="column-4">58</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-126 even">
+	<td class="column-1">Uln_08</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">59</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-127 odd">
+	<td class="column-1">Uln_09</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">51A</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-128 even">
+	<td class="column-1">Uln_10</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">51B</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-129 odd">
+	<td class="column-1">Uln_11</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">51C</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-130 even">
+	<td class="column-1">Uln_12</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">57</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-131 odd">
+	<td class="column-1">Sac_01</td><td class="column-2">53</td><td class="column-3">53</td><td class="column-4">60</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-132 even">
+	<td class="column-1">Sac_02</td><td class="column-2">54</td><td class="column-3">54</td><td class="column-4">61</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-133 odd">
+	<td class="column-1">Sac_03</td><td class="column-2">55</td><td class="column-3">55</td><td class="column-4">62</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-134 even">
+	<td class="column-1">Sac_04</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">63</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-135 odd">
+	<td class="column-1">Sac_05</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">55J</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-136 even">
+	<td class="column-1">Osc_01</td><td class="column-2">56</td><td class="column-3">56</td><td class="column-4">64</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-137 odd">
+	<td class="column-1">Osc_02</td><td class="column-2">57</td><td class="column-3">57</td><td class="column-4">65</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-138 even">
+	<td class="column-1">Osc_03</td><td class="column-2">58</td><td class="column-3">58</td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-139 odd">
+	<td class="column-1">Osc_04</td><td class="column-2">59</td><td class="column-3">59</td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-140 even">
+	<td class="column-1">Osc_05</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">66</td><td class="column-5">59D</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-141 odd">
+	<td class="column-1">Osc_06</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">67</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-142 even">
+	<td class="column-1">Osc_07</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">68</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-143 odd">
+	<td class="column-1">Osc_08</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">69</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-144 even">
+	<td class="column-1">Osc_09</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">70</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-145 odd">
+	<td class="column-1">Osc_10</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">71</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-146 even">
+	<td class="column-1">Osc_11</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">72</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-147 odd">
+	<td class="column-1">Osc_12</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">73</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-148 even">
+	<td class="column-1">Osc_13</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">74</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-149 odd">
+	<td class="column-1">Osc_14</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">59A</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-150 even">
+	<td class="column-1">Osc_15</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">59B</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-151 odd">
+	<td class="column-1">Osc_16</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">59C</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-152 even">
+	<td class="column-1">Osc_17</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">59E</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-153 odd">
+	<td class="column-1">Fem_01</td><td class="column-2">60</td><td class="column-3">60</td><td class="column-4">75</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-154 even">
+	<td class="column-1">Fem_02</td><td class="column-2">61</td><td class="column-3">61</td><td class="column-4">76</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-155 odd">
+	<td class="column-1">Fem_03</td><td class="column-2">62</td><td class="column-3">62</td><td class="column-4">77</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-156 even">
+	<td class="column-1">Fem_04</td><td class="column-2">63</td><td class="column-3">63</td><td class="column-4">78</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-157 odd">
+	<td class="column-1">Fem_05</td><td class="column-2">65</td><td class="column-3">65</td><td class="column-4">79</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-158 even">
+	<td class="column-1">Fem_06</td><td class="column-2">64</td><td class="column-3">64</td><td class="column-4">80</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-159 odd">
+	<td class="column-1">Fem_07</td><td class="column-2">66</td><td class="column-3">66</td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-160 even">
+	<td class="column-1">Fem_08</td><td class="column-2">67</td><td class="column-3">67</td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-161 odd">
+	<td class="column-1">Fem_09</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">81</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-162 even">
+	<td class="column-1">Fem_10</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">82</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-163 odd">
+	<td class="column-1">Fem_11</td><td class="column-2">68</td><td class="column-3">68</td><td class="column-4">83</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-164 even">
+	<td class="column-1">Fem_12</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">84</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-165 odd">
+	<td class="column-1">Fem_13</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">85</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-166 even">
+	<td class="column-1">Fem_14</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">68A</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-167 odd">
+	<td class="column-1">Fem_15</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">68B</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-168 even">
+	<td class="column-1">Fem_16</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">68D</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-169 odd">
+	<td class="column-1">Fem_17</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">68E</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-170 even">
+	<td class="column-1">Fem_18</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6">VHA</td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-171 odd">
+	<td class="column-1">Fem_19</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6">LCH</td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-172 even">
+	<td class="column-1">Tib_01</td><td class="column-2">69</td><td class="column-3">69</td><td class="column-4">86</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-173 odd">
+	<td class="column-1">Tib_02</td><td class="column-2">70</td><td class="column-3">70</td><td class="column-4">87</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-174 even">
+	<td class="column-1">Tib_03</td><td class="column-2">71</td><td class="column-3">71</td><td class="column-4">88</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-175 odd">
+	<td class="column-1">Tib_04</td><td class="column-2">72</td><td class="column-3">72</td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-176 even">
+	<td class="column-1">Tib_05</td><td class="column-2">73</td><td class="column-3">73</td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-177 odd">
+	<td class="column-1">Tib_06</td><td class="column-2">74</td><td class="column-3">74</td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-178 even">
+	<td class="column-1">Tib_07</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">89</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-179 odd">
+	<td class="column-1">Tib_08</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">90</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-180 even">
+	<td class="column-1">Tib_09</td><td class="column-2"></td><td class="column-3"></td><td class="column-4">91</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-181 odd">
+	<td class="column-1">Tib_10</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">74A</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-182 even">
+	<td class="column-1">Tib_11</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">74B</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-183 odd">
+	<td class="column-1">Tib_12</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">74F</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-184 even">
+	<td class="column-1">Tib_13</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7">BB</td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-185 odd">
+	<td class="column-1">Tib_14</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7">MCW</td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-186 even">
+	<td class="column-1">Tib_15</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7">MCL</td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-187 odd">
+	<td class="column-1">Tib_16</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"></td><td class="column-7">LCL</td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-188 even">
+	<td class="column-1">Fib_01</td><td class="column-2">75</td><td class="column-3">75</td><td class="column-4">92</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-189 odd">
+	<td class="column-1">Fib_02</td><td class="column-2">76</td><td class="column-3">76</td><td class="column-4">93</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-190 even">
+	<td class="column-1">Fib_03</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">76A</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-191 odd">
+	<td class="column-1">Fib_04</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">76B</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-192 even">
+	<td class="column-1">Fib_05</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">76C</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-193 odd">
+	<td class="column-1">Cal_01</td><td class="column-2">77</td><td class="column-3">77</td><td class="column-4">94</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8">MCAL</td><td class="column-9"></td>
+</tr>
+<tr class="row-194 even">
+	<td class="column-1">Cal_02</td><td class="column-2">78</td><td class="column-3">78</td><td class="column-4">95</td><td class="column-5"></td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-195 odd">
+	<td class="column-1">Cal_03</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">78A</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-196 even">
+	<td class="column-1">Cal_04</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">78B</td><td class="column-6"></td><td class="column-7"></td><td class="column-8">PCAL</td><td class="column-9"></td>
+</tr>
+<tr class="row-197 odd">
+	<td class="column-1">Pat_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">74.5A</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-198 even">
+	<td class="column-1">Pat_02</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">74.5B</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-199 odd">
+	<td class="column-1">Pat_03</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">74.5C</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-200 even">
+	<td class="column-1">Tal_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">79</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-201 odd">
+	<td class="column-1">Tal_02</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">79A</td><td class="column-6"></td><td class="column-7"></td><td class="column-8">MTAL</td><td class="column-9"></td>
+</tr>
+<tr class="row-202 even">
+	<td class="column-1">Tal_03</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">79B</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-203 odd">
+	<td class="column-1">Nav_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">80G</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-204 even">
+	<td class="column-1">Cf1_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">80H</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-205 odd">
+	<td class="column-1">Cf2_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">80I</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-206 even">
+	<td class="column-1">Cf3_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">80J</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-207 odd">
+	<td class="column-1">Cub_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">80F</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-208 even">
+	<td class="column-1">MT1_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">80A</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-209 odd">
+	<td class="column-1">MT2_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">80B</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-210 even">
+	<td class="column-1">MT3_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">80C</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-211 odd">
+	<td class="column-1">MT4_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">80D</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-212 even">
+	<td class="column-1">MT5_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">80E</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-213 odd">
+	<td class="column-1">Pis_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">52.5I</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-214 even">
+	<td class="column-1">Scp_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">52.5F</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-215 odd">
+	<td class="column-1">Tzm_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">52.5J</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-216 even">
+	<td class="column-1">Tzd_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">52.5K</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-217 odd">
+	<td class="column-1">Tri_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">52.5H</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-218 even">
+	<td class="column-1">Lun_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">52.5G</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-219 odd">
+	<td class="column-1">Cap_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">52.5L</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-220 even">
+	<td class="column-1">Ham_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">52.5M</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-221 odd">
+	<td class="column-1">MC1_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">52.5A</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-222 even">
+	<td class="column-1">MC2_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">52.5B</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-223 odd">
+	<td class="column-1">MC3_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">52.5C</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-224 even">
+	<td class="column-1">MC4_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">52.5D</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-225 odd">
+	<td class="column-1">MC5_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">52.5E</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-226 even">
+	<td class="column-1">Cer1_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">81A (left)</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-227 odd">
+	<td class="column-1">Cer1_02</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">81A (right)</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-228 even">
+	<td class="column-1">Cer1_03</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">81M (left)</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-229 odd">
+	<td class="column-1">Cer1_04</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">81M (right)</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-230 even">
+	<td class="column-1">Cer2_01</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">81B (left)</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+<tr class="row-231 odd">
+	<td class="column-1">Cer2_02</td><td class="column-2"></td><td class="column-3"></td><td class="column-4"></td><td class="column-5">81B (right)</td><td class="column-6"></td><td class="column-7"></td><td class="column-8"></td><td class="column-9"></td>
+</tr>
+</tbody>
+</table><div><br><br></div></div>
+    <div class="col-md-12 col-xl-10 offset-xl-1" style="padding: 0px;">
+        <footer class="border rounded" style="background-color: #273039;">
+            <p class="text-center copyright" style="color: #eeeeee;opacity: 1;font-family: 'Open Sans', sans-serif;"><strong>Copyleft 2019 - OsteoCodeR.com</strong></p>
+        </footer>
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/z.js"></script>
+</body>
+
+</html>
