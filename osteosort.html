@@ -35,7 +35,8 @@
                 <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" style="color: #eeeeee;font-family: 'Open Sans', sans-serif;" href="#"><i class="fas fa-chart-bar"></i>&nbsp;<strong>Tools</strong></a>
                     <div class="dropdown-menu border-secondary"
                         role="menu" style="background-color: #eeeeee;"><a class="dropdown-item" role="presentation" style="color: #273039;font-size: 14px;" href="#"><strong>OsteoSort</strong></a>
-                        <div class="dropdown-divider border-secondary" role="presentation"></div><a class="dropdown-item" role="presentation" href="#" style="color: #273039;font-size: 14px;"><strong>MSPS</strong></a></div>
+                        <div class="dropdown-divider border-secondary" role="presentation"></div><a class="dropdown-item" role="presentation" href="#" style="color: #273039;font-size: 14px;"><strong>MSPS</strong></a>
+                        <div class="dropdown-divider border-secondary" role="presentation"></div><a class="dropdown-item" role="presentation" href="#" style="color: #273039;font-size: 14px;"><strong>Beta Testing</strong></a></div>
                 </li>
                 <li class="nav-item" role="presentation"><a class="nav-link" style="color: #eeeeee;background-color: rgba(255,0,0,0);font-family: 'Open Sans', sans-serif;" href="https://github.com/jjlynch2" target="_blank"><i class="fab fa-github"></i><strong>&nbsp;GitHub</strong></a></li>
                 </ul>
@@ -43,7 +44,25 @@
     </div>
     </nav>
     </div>
-    <div class="col-md-12 col-xl-10 offset-xl-1 rounded" style="background-color: #eeeeee;"><div><br></div><div><br><br></div></div>
+    <div class="col-md-12 col-xl-10 offset-xl-1 rounded" style="background-color: #eeeeee;"><div><br></div>
+        <h4>OsteoSort</h4>
+        <p>OsteoSort is an osteological sorting package for R. A variety of quantitative tools are available with an emphasis on model construction. The latest version, 1.3.0, is a significant redevelopment of the backend analytical platform. The majority
+            of the source code is now written in the Julia programming language, which provides crossplatform parallel support for any method that requires multiple comparisons (e.g. large commingled assemblages).<br><br></p>
+        <h5>Technical Requirements:</h5><font size="1"><ol>
+    <li type="square"><p style="margin:2px">Linux, macOS, or Windows 7/8/10</p></li>
+    <li type="square"><p style="margin:2px">R version >= 3.3.0</p></li>
+    <li type="square"><p style="margin:2px">Julia version >= 1.0.0</p></li>
+   <li type="square"><p style="margin:2px">Recommended > 8 gigabytes of RAM</p></li>
+    </font></ol>
+<br>
+        <h5>Installation from R:</h5><div style="background-color:lightgrey;width:29%;border-style:dashed;border-width:1px">
+    <font size="1">
+        <p style="margin:2px">library(devtools)</p>
+        <p style="margin:2px">install.github("jjlynch2/OsteoSort", ref="v1.3.0")</p>
+        <p style="margin:2px">library(OsteoSort)</p>
+        <p style="margin:2px">OsteoSort()</p>
+    </font>
+</div><br></div>
     <div class="col-md-12 col-xl-10 offset-xl-1" style="padding: 0px;">
         <footer class="border rounded" style="background-color: #273039;">
             <p class="text-center copyright" style="color: #eeeeee;opacity: 1;font-family: 'Open Sans', sans-serif;"><strong>Copyleft 2019 - OsteoCodeR.com</strong></p>
