@@ -47,22 +47,50 @@
     <div class="col-md-12 col-xl-10 offset-xl-1 rounded" style="background-color: #eeeeee;"><div><br></div>
         <h4>OsteoSort</h4>
         <p>OsteoSort is an osteological sorting package for R. A variety of quantitative tools are available with an emphasis on model construction. The latest version, 1.3.0, is a significant redevelopment of the backend analytical platform. The majority
-            of the source code is now written in the Julia programming language, which provides crossplatform parallel support for any method that requires multiple comparisons (e.g. large commingled assemblages).<br><br></p>
-        <h5>Technical Requirements:</h5><font size="1"><ol>
+            of the source code is now written in the Julia programming language, which provides crossplatform parallel support for any method that requires multiple comparisons (e.g. large commingled assemblages).<br><br>Current version: 1.3.0</p><div><br></div>
+        <div
+            class="row">
+            <div class="col-md-6">
+                <h5>Technical Requirements:</h5><font size="1"><ol>
     <li type="square"><p style="margin:2px">Linux, macOS, or Windows 7/8/10</p></li>
     <li type="square"><p style="margin:2px">R version >= 3.3.0</p></li>
     <li type="square"><p style="margin:2px">Julia version >= 1.0.0</p></li>
    <li type="square"><p style="margin:2px">Recommended > 8 gigabytes of RAM</p></li>
-    </font></ol>
-<br>
-        <h5>Installation from R:</h5><div style="background-color:lightgrey;width:29%;border-style:dashed;border-width:1px">
-    <font size="1">
-        <p style="margin:2px">library(devtools)</p>
-        <p style="margin:2px">install.github("jjlynch2/OsteoSort", ref="v1.3.0")</p>
-        <p style="margin:2px">library(OsteoSort)</p>
-        <p style="margin:2px">OsteoSort()</p>
-    </font>
-</div><br></div>
+    </font></ol></div>
+            <div class="col-md-6">
+                <h5>Installation from R:</h5><div style="background-color:lightgrey;width:100%;border-style:dashed;border-width:1px">   
+<font size="1">
+    <span style="margin:2px;color:#2a7bb6">library(devtools)<br>
+        install.github("jjlynch2/OsteoSort", ref="v1.3.0")<br>
+        library(OsteoSort)<br>
+       OsteoSort()
+    </span></font></div><br><br></div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Julia Dependencies:</h5><font size="1"><ol>
+    <li type="square"><p style="margin:2px">Distributed</p></li>
+    <li type="square"><p style="margin:2px">Statistics</p></li>
+    <li type="square"><p style="margin:2px">Rmath</p></li>
+   <li type="square"><p style="margin:2px">GLM</p></li>
+    <li type="square"><p style="margin:2px">Optim</p></li>
+    <li type="square"><p style="margin:2px">SharedArrays</p></li>
+    </font></ol></div>
+        <div class="col-md-6">
+            <h5>R Dependencies:</h5><font size="1"><ol>
+    <li type="square"><p style="margin:2px">pixmap</p></li>
+    <li type="square"><p style="margin:2px">jpeg</p></li>
+    <li type="square"><p style="margin:2px">Morpho</p></li>
+   <li type="square"><p style="margin:2px">DT</p></li>
+    <li type="square"><p style="margin:2px">shiny</p></li>
+    <li type="square"><p style="margin:2px">htmltools</p></li>
+    <li type="square"><p style="margin:2px">zip</p></li>
+    <li type="square"><p style="margin:2px">rgl</p></li>
+    <li type="square"><p style="margin:2px">ClusterR</p></li>
+    <li type="square"><p style="margin:2px">JuliaCall</p></li>
+    </font></ol><br><br></div>
+    </div>
+    </div>
     <div class="col-md-12 col-xl-10 offset-xl-1" style="padding: 0px;">
         <footer class="border rounded" style="background-color: #273039;">
             <p class="text-center copyright" style="color: #eeeeee;opacity: 1;font-family: 'Open Sans', sans-serif;"><strong>Copyleft 2019 - OsteoCodeR.com</strong></p>
