@@ -3,7 +3,7 @@ Tool,Programming Language,Source Code,License,Category
 3D-ID,Java,Closed,EULA,Ancestry, Sex
 3Skull,Delphi,Closed,EULA,Data Analysis
 ADBOU,Delphi,Closed,EULA,Age
-AFA3D,R/ C++,Closed,EULA,Craniofacial
+AFA3D,R/C++,Closed,EULA,Craniofacial
 AncesTrees,R,Closed,None,Ancestry
 AnthroStats,R,Open,GPLv2,Data Analysis
 BodyPlot,R,Open,GPLv2,Body Proportion
@@ -32,6 +32,7 @@ OsteoShiny,R,Open,GPLv2,Commingled
 OsteoSort,R, Julia, VB,Open,GPLv2,Commingled
 Osteoware,Delphi,Closed,EULA,Data Analysis
 PerspectiveX,R,Open,GPLv2,Craniofacial
+QA3D,R/Julia,Open,GPLv2,Data Analysis
 QuickCapture,R,Open,GPLv2,Data Analysis
 rASUDAS,R,Closed,None,Ancestry
 Raxter,R,Closed,None,Body Proportion
