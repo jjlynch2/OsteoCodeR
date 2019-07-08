@@ -27,13 +27,13 @@
                             <li class="nav-item" role="presentation"><a class="nav-link active" style="color: #eeeeee;font-family: 'Open Sans', sans-serif;" href="index.html"><i class="far fa-question-circle"></i><strong>&nbsp;About</strong></a></li>
                             <li class="dropdown nav-item" style="color: rgb(42,123,182);"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" style="color: #2a7bb6;font-family: 'Open Sans', sans-serif;background-color: rgba(255,255,255,0);" href="#"><i class="fas fa-project-diagram"></i><strong>&nbsp;Projects</strong></a>
                                 <div
-                                    class="dropdown-menu border-secondary" role="menu" style="background-color: #eeeeee;color: #2a7bb6;"><a class="dropdown-item" role="presentation" style="font-size: 14px;color: #2a7bb6;" href="osteosort.html"><strong>OsteoSort</strong></a>
+                                    class="dropdown-menu border-secondary" role="menu" style="background-color: #eeeeee;color: #2a7bb6;"><a class="dropdown-item" role="presentation" style="font-size: 14px;color: #273039;" href="osteosort.html"><strong>OsteoSort</strong></a>
                                     <div class="dropdown-divider text-warning border-secondary" role="presentation"></div><a class="dropdown-item" role="presentation" style="font-size: 14px;color: #273039;" href="measurements.html"><strong>Measurement Standards</strong><br></a>
                                     <div class="dropdown-divider border-secondary" role="presentation"></div><a class="dropdown-item" role="presentation" style="font-size: 14px;color: #273039;" href="anthrostats.html"><strong>AnthroStats</strong></a>
                                     <div class="dropdown-divider border-secondary" role="presentation"></div><a class="dropdown-item" role="presentation" href="tools.html" style="color: #273039;font-size: 14px;"><strong>FA Analytical Tools</strong></a>
                                     <div class="dropdown-divider border-secondary" role="presentation"></div><a class="dropdown-item" role="presentation" href="QA3D.html" style="color: #273039;font-size: 14px;"><strong>QA3D</strong></a>
                                     <div class="dropdown-divider border-secondary" role="presentation"></div><a class="dropdown-item" role="presentation" href="CentroidBanding.html" style="color: #273039;font-size: 14px;"><strong>Centroid Banding</strong></a>
-                                    <div class="dropdown-divider border-secondary" role="presentation"></div><a class="dropdown-item" role="presentation" href="MSPS.html" style="color: #273039;font-size: 14px;"><strong>MSPS</strong></a></div>
+                                    <div class="dropdown-divider border-secondary" role="presentation"></div><a class="dropdown-item" role="presentation" href="MSPS.html" style="color: #2a7bb6;font-size: 14px;"><strong>MSPS</strong></a></div>
                 </li>
                 <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" style="color: #eeeeee;font-family: 'Open Sans', sans-serif;" href="#"><i class="fas fa-chart-bar"></i>&nbsp;<strong>Tools</strong></a>
                     <div class="dropdown-menu border-secondary"
@@ -48,10 +48,9 @@
     </nav>
     </div>
     <div class="col-md-12 col-xl-10 offset-xl-1 rounded" style="background-color: #eeeeee;"><div><br></div>
-        <h4>OsteoSort</h4>
-        <p>Legacy installation instructions for 1.2.6 can be found on GitHub. Version 1.3.0 is expected to be released for beta testing in September 2019. Below are the anticipated requirements for version 1.3.0.<br><br>OsteoSort is an osteological sorting
-            package for R. A variety of quantitative tools are available with an emphasis on model construction. The latest version, 1.3.0, is a significant redevelopment of the backend analytical platform. Most of the source code is now written in the
-            Julia programming language, which provides cross platform parallel support for any method that requires multiple comparisons (e.g. large commingled assemblages).<br><br></p><div><br></div>
+        <h4>MSPS</h4>
+        <p>MSPQ (McKern and Stewart Pubic Sympysis) is an R package that provides three-dimensional models of the original McKern and Stewart 1957 casts, data, and descriptions to aid with age estimation when physical casts are not available.<br><br>Current
+            version: Under Development</p><div><br></div>
         <div class="row">
             <div class="col-md-6">
                 <h5>Technical Requirements:</h5><font size="1"><ol>
@@ -64,34 +63,23 @@
                 <h5>Installation from R:</h5><div style="background-color:lightgrey;width:100%;border-style:dashed;border-width:1px">   
 <font size="1">
     <span style="margin:2px;color:#2a7bb6">library(devtools)<br>
-        install.github("jjlynch2/OsteoSort", ref="v1.3.0")<br>
-        library(OsteoSort)<br>
-       OsteoSort()
+        install.github("jjlynch2/MSPS", ref="v0.0.1")<br>
+        library(MSPS)<br>
+       MSPS()
     </span></font></div><br><br></div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <h5>Julia Dependencies:</h5><font size="1"><ol>
-    <li type="square"><p style="margin:2px">Distributed</p></li>
-    <li type="square"><p style="margin:2px">Statistics</p></li>
-    <li type="square"><p style="margin:2px">Rmath</p></li>
-   <li type="square"><p style="margin:2px">GLM</p></li>
-    <li type="square"><p style="margin:2px">Optim</p></li>
-    <li type="square"><p style="margin:2px">SharedArrays</p></li>
-    </font></ol></div>
-            <div class="col-md-6">
                 <h5>R Dependencies:</h5><font size="1"><ol>
-    <li type="square"><p style="margin:2px">pixmap</p></li>
-    <li type="square"><p style="margin:2px">jpeg</p></li>
-    <li type="square"><p style="margin:2px">Morpho</p></li>
    <li type="square"><p style="margin:2px">DT</p></li>
     <li type="square"><p style="margin:2px">shiny</p></li>
     <li type="square"><p style="margin:2px">htmltools</p></li>
     <li type="square"><p style="margin:2px">zip</p></li>
     <li type="square"><p style="margin:2px">rgl</p></li>
-    <li type="square"><p style="margin:2px">ClusterR</p></li>
-    <li type="square"><p style="margin:2px">JuliaCall</p></li>
+    <li type="square"><p style="margin:2px">rmarkdown</p></li>
+    <li type="square"><p style="margin:2px">knitr</p></li>
     </font></ol><br><br></div>
+            <div class="col-md-6"></div>
         </div>
     </div>
     <div class="col-md-12 col-xl-10 offset-xl-1" style="padding: 0px;">
