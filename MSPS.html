@@ -49,22 +49,36 @@
     </div>
     <div class="col-md-12 col-xl-10 offset-xl-1 rounded" style="background-color: #eeeeee;"><div><br></div>
         <h4>MSPS</h4>
-        <p>MSPQ (McKern and Stewart Pubic Sympysis) is an R package that provides three-dimensional models of the original McKern and Stewart 1957 casts, data, and descriptions to aid with age estimation when physical casts are not available.<br><br>Current
-            version: Under Development</p><div><br></div>
-        <div class="row">
+        <p>MSPS (McKern and Stewart Pubic Symphysis) is an R package that provides three-dimensional models of the original McKern and Stewart (1957) casts, data, and descriptions to aid with age estimation when physical casts are not available.<br><br>Current
+            version: 0.0.1<br>Developer: Dr. Jodi Caple <br>Contact: jodicaple [at] gmail [dot] com<br>Source Code:&nbsp;<a href="https://github.com/jcaple18/MSPS" target="_blank">GitHub Repository</a><br></p><div><br></div>
+        <div
+            class="row">
             <div class="col-md-6">
-                <h5>Technical Requirements:</h5>
-            </div>
+                <h5>R Dependencies:</h5><font size="1"><ol>
+    <li type="square"><p style="margin:2px">rgl</p></li>
+    <li type="square"><p style="margin:2px">rmarkdown</p></li>
+    <li type="square"><p style="margin:2px">shiny</p></li>
+   <li type="square"><p style="margin:2px">shinyjs</p></li>
+    <li type="square"><p style="margin:2px">shinyRGL</p></li>
+    <li type="square"><p style="margin:2px">shinythemes</p></li>
+    <li type="square"><p style="margin:2px">shinyWidgets</p></li>
+    </font></ol></div>
             <div class="col-md-6">
-                <h5>Installation from R:</h5>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <h5>R Dependencies:</h5>
-            </div>
-            <div class="col-md-6"></div>
-        </div>
+                <h5>Installation from R:</h5><div style="background-color:lightgrey;width:100%;border-style:dashed;border-width:1px">   
+<font size="1">
+    <span style="margin:2px;color:#2a7bb6">
+if(!require("devtools")) install.packages("devtools")<br>
+library(devtools)<br>
+install_github("jcaple18/MSPS")<br>
+library(MSPS)<br>
+MSPS()
+        
+    </span></font></div><br><br></div>
+    </div>
+    <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6"></div>
+    </div>
     </div>
     <div class="col-md-12 col-xl-10 offset-xl-1" style="padding: 0px;">
         <footer class="border rounded" style="background-color: #273039;">
