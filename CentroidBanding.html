@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="assets/css/fluid-container-fix.css">
     <link rel="stylesheet" href="assets/css/Footer-Dark.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/iframe.css">
     <link rel="stylesheet" href="assets/css/Logo.css">
 </head>
@@ -23,18 +22,22 @@
             <nav class="navbar navbar-light navbar-expand-md border rounded shadow-none navigation-clean" style="background-color: #273039;color: rgb(255,255,255);">
                 <div class="container"><a class="navbar-brand" href="#"><img style="background-image: url(&quot;assets/img/logo.png&quot;);width: 381px;height: 45px;" src="assets/img/logo.png">&nbsp;</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="nav navbar-nav ml-auto" style="color: #2a7bb6;">
+                        <ul class="navbar-nav ml-auto" style="color: #2a7bb6;">
                             <li class="nav-item"><a class="nav-link active" style="color: #eeeeee;font-family: 'Open Sans', sans-serif;" href="index.html"><i class="far fa-question-circle"></i><strong>&nbsp;About</strong></a></li>
-                            <li class="dropdown nav-item" style="color: rgb(42,123,182);"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" style="color: #2a7bb6;font-family: 'Open Sans', sans-serif;background-color: rgba(255,255,255,0);" href="#"><i class="fas fa-project-diagram"></i><strong>&nbsp;Projects</strong></a>
+                            <li class="dropdown nav-item" style="color: rgb(42,123,182);"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" style="color: #eeeeee;font-family: 'Open Sans', sans-serif;background-color: rgba(255,255,255,0);border-color: #2a7bb6;" href="#"><i class="fas fa-project-diagram"></i><strong>&nbsp;Projects</strong></a>
                                 <div class="dropdown-menu border-secondary" style="background-color: #eeeeee;color: #2a7bb6;"><a class="dropdown-item" style="font-size: 14px;color: #273039;" href="osteosort.html"><strong>OsteoSort</strong></a>
-                                    <div class="dropdown-divider text-warning border-secondary"></div><a class="dropdown-item" style="font-size: 14px;color: #273039;" href="measurements.html"><strong>Measurement Standards</strong><br></a>
-                                    <div class="dropdown-divider border-secondary"></div><a class="dropdown-item" style="font-size: 14px;color: #273039;" href="tools.html"><strong>FA Analytical Tools</strong><br></a>
+                                    <div class="dropdown-divider text-warning border-secondary"></div><a class="dropdown-item" href="#" style="font-size: 14px;color: #273039;"><strong>OsteoSort 3D</strong></a>
+                                    <div class="dropdown-divider border-secondary"></div><a class="dropdown-item" style="font-size: 14px;color: #273039;" href="measurements.html"><strong>Measurement Standards</strong></a>
+                                    <div class="dropdown-divider border-secondary"></div><a class="dropdown-item" href="#" style="color: #273039;font-size: 14px;"><strong>StatureID</strong></a>
+                                    <div class="dropdown-divider border-secondary"></div><a class="dropdown-item" style="font-size: 14px;color: #273039;" href="tools.html"><strong>FA Tools</strong></a>
                                     <div class="dropdown-divider border-secondary"></div><a class="dropdown-item" href="QA3D.html" style="color: #273039;font-size: 14px;"><strong>QA3D</strong></a>
-                                    <div class="dropdown-divider border-secondary"></div><a class="dropdown-item" href="CentroidBanding.html" style="color: #2a7bb6;font-size: 14px;"><strong>Centroid Banding</strong></a>
+                                    <div class="dropdown-divider border-secondary"></div><a class="dropdown-item" href="CentroidBanding.html" style="color: #273039;font-size: 14px;"><strong>Centroid Banding</strong></a>
                                 </div>
                             </li>
-                            <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" style="color: #eeeeee;font-family: 'Open Sans', sans-serif;" href="#"><i class="fas fa-chart-bar"></i>&nbsp;<strong>Tools</strong></a>
-                                <div class="dropdown-menu border-secondary" style="background-color: #eeeeee;"><a class="dropdown-item" style="color: #273039;font-size: 14px;" href="http://osteosort.net" target="_blank"><strong>OsteoSort</strong></a><a class="dropdown-item" href="https://osteocoder.com/MSPS/" style="color: #273039;font-size: 14px;" target="_blank"><strong>MSPS</strong></a><a class="dropdown-item" href="#" style="color: #273039;font-size: 14px;"><strong>Beta Testing</strong></a></div>
+                            <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" style="color: #eeeeee;font-family: 'Open Sans', sans-serif;" href="#"><i class="fas fa-chart-bar"></i>&nbsp;<strong>Tools</strong></a>
+                                <div class="dropdown-menu border-secondary" style="background-color: #eeeeee;"><a class="dropdown-item" style="color: #273039;font-size: 14px;" href="http://osteosort.net" target="_blank"><strong>OsteoSort</strong></a>
+                                    <div class="dropdown-divider border-secondary"></div><a class="dropdown-item" href="#" style="color: #273039;font-size: 14px;"><strong>Beta Testing</strong></a>
+                                </div>
                             </li>
                             <li class="nav-item"><a class="nav-link" style="color: #eeeeee;background-color: rgba(255,0,0,0);font-family: 'Open Sans', sans-serif;" href="https://github.com/jjlynch2" target="_blank"><i class="fab fa-github"></i><strong>&nbsp;GitHub</strong></a></li>
                         </ul>
@@ -77,12 +80,13 @@
         </div>
         <div class="col-md-12 col-xl-10 offset-xl-1" style="padding: 0px;">
             <footer class="border rounded" style="background-color: #273039;">
-                <p class="text-center copyright" style="color: #eeeeee;opacity: 1;font-family: 'Open Sans', sans-serif;"><strong>Copyleft 2021 - OsteoCodeR.com</strong></p>
+                <p class="text-center copyright" style="color: #eeeeee;opacity: 1;font-family: 'Open Sans', sans-serif;"><strong>Copyleft 2024 - OsteoCodeR.com</strong></p>
             </footer>
         </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
     <script src="assets/js/z.js"></script>
